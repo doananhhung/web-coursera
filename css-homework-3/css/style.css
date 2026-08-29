@@ -1,0 +1,149 @@
+﻿/* ==========================================================================
+   CSS Stylesheet for Homework Three: Modifying and Extending CSS
+   ========================================================================== */
+
+/* Skip to Main Content Link (Requirement: Working skip link) */
+.skip {
+  position: absolute;
+  top: -60px;
+  left: 10px;
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0 0 6px 6px;
+  z-index: 1000;
+  border: 2px solid #38bdf8;
+  transition: top 0.3s ease;
+}
+
+.skip:focus {
+  top: 0;
+}
+
+/* 1. body tag */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. header tag */
+header {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 20px 15px;
+}
+
+/* 3. nav tag (Requirement: Change nav element to use inline-block and width of about 80%) */
+nav {
+  display: inline-block;
+  width: 80%;
+  background-color: #dbeafe;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+/* 4. Descendant selector for image in nav / header (Requirement: width of about 10%) */
+nav img,
+header img {
+  width: 10%;
+  vertical-align: middle;
+  border-radius: 6px;
+}
+
+/* 5. Comment out existing styling for the li element (Requirement: Comment out li styling) */
+/*
+li {
+  display: inline-block;
+  width: 180px;
+}
+*/
+
+/* 6. main tag */
+main {
+  background-color: #ffffff;
+  font-size: 1.05rem;
+  padding: 25px;
+  min-height: 350px;
+}
+
+/* 7. footer tag */
+footer {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #93c5fd;
+}
+
+/* 8. h1 tag */
+h1 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+/* 9. p tag */
+p {
+  line-height: 1.7;
+  color: #1e293b;
+}
+
+/* ==========================================================================
+   CSS Grid & Flexbox Requirements
+   ========================================================================== */
+
+/* 10. Style .grid class (Requirement: 2-column grid ~40% each, justify-content, align-items, row-gap) */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 25px;
+  margin: 20px 0;
+}
+
+/* 11. Descendant selector: only style images in the .grid class (Requirement: width 100%) */
+.grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 12. Style .flex class (Requirement: display flex, flex-wrap, justify-content, align-items, row-gap) */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.flex img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation link styling */
+nav a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
