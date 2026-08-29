@@ -1,0 +1,77 @@
+/* CSS Stylesheet for Homework One: Styling Your First Page */
+
+/* 1. body: modify font-family and font-size */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. header: modify background-color */
+header {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 20px 10px;
+}
+
+/* 3. nav: modify background-color */
+nav {
+  background-color: #dbeafe;
+  padding: 12px 15px;
+  border-radius: 4px;
+}
+
+/* 4. main: modify background-color and font-size */
+main {
+  background-color: #ffffff;
+  font-size: 1.05rem;
+  padding: 25px;
+  min-height: 350px;
+}
+
+/* 5. footer: modify background-color */
+footer {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 6. li: modify display and width */
+li {
+  display: inline-block;
+  width: 180px;
+}
+
+/* 7. h1: modify text-align, font-family, and color */
+h1 {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+/* 8. p: modify line-height */
+p {
+  line-height: 1.7;
+  color: #1e293b;
+}
+
+/* Additional styling for clean navigation and high contrast */
+footer a {
+  color: #93c5fd;
+}
+
+nav a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
