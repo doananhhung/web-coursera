@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coursera Web Design Assignments</title>
+  <title>Coursera Web Design & JavaScript Assignments</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -23,7 +23,7 @@
       padding: 0;
     }
     .container {
-      max-width: 960px;
+      max-width: 1050px;
       margin: 40px auto;
       padding: 0 20px;
     }
@@ -42,7 +42,7 @@
     }
     .assignments-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 24px;
     }
     .card {
@@ -62,7 +62,7 @@
     }
     .card h2 {
       margin-top: 0;
-      font-size: 1.3rem;
+      font-size: 1.25rem;
       color: var(--primary);
     }
     .card p {
@@ -70,6 +70,25 @@
       margin-bottom: 20px;
       flex-grow: 1;
       font-size: 0.95rem;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      width: fit-content;
+    }
+    .badge-css {
+      background-color: #dbeafe;
+      color: #1d4ed8;
+    }
+    .badge-js {
+      background-color: #fef3c7;
+      color: #b45309;
     }
     .btn {
       display: inline-block;
@@ -90,13 +109,14 @@
 <body>
   <div class="container">
     <header>
-      <h1>Coursera Web Design Coursework</h1>
-      <p class="subtitle">Assignments for the Web Design for Everybody Specialization</p>
+      <h1>Coursera Coursework Portfolio</h1>
+      <p class="subtitle">Web Design for Everybody: HTML5, CSS3 & JavaScript Specialization</p>
     </header>
 
     <main class="assignments-list">
       <div class="card">
         <div>
+          <span class="badge badge-css">CSS3 • HW 1</span>
           <h2>Homework 1: Styling Your First Page</h2>
           <p>CSS basics: linking stylesheets, font typography, layout styling, list display, and color contrast accessibility.</p>
         </div>
@@ -105,6 +125,7 @@
 
       <div class="card">
         <div>
+          <span class="badge badge-css">CSS3 • HW 2</span>
           <h2>Homework 2: Original Multi-Page Site</h2>
           <p>Advanced CSS: Skip to Main Content link, Flexbox navigation, CSS Grid gallery, box model, :nth-child styling, and hover transitions.</p>
         </div>
@@ -113,10 +134,20 @@
 
       <div class="card">
         <div>
+          <span class="badge badge-css">CSS3 • HW 3</span>
           <h2>Homework 3: Modifying and Extending CSS</h2>
           <p>Skip-link accessibility, comment-out li styling, inline-block nav (80%), descendant selectors, 2-column grid (.grid), and flex layout (.flex).</p>
         </div>
         <a href="css-homework-3/index.html" class="btn">View Homework 3 &rarr;</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="badge badge-js">JavaScript • HW</span>
+          <h2>Interactive Photo Gallery</h2>
+          <p>JavaScript DOM manipulation: implementing upDate() and unDo() event handlers for interactive hover and focus gallery viewer.</p>
+        </div>
+        <a href="js-homework-gallery/index.html" class="btn">View JavaScript Gallery &rarr;</a>
       </div>
     </main>
   </div>

@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery | Coursera JavaScript</title>
+  <link rel="stylesheet" href="css/gallery.css">
+  <script src="js/gallery.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Interactive Photo Gallery</h1>
+    <p class="instructions">Hover over or focus on any thumbnail below to display it in the main viewer.</p>
+  </header>
+
+  <main>
+    <!-- Main Display Element with id="image" -->
+    <div id="image">
+      Hover over an image below to display here.
+    </div>
+
+    <!-- Thumbnails Container -->
+    <div class="gallery-container">
+      <img class="preview" 
+           alt="Bacon at Gallup Park" 
+           src="images/bacon1.jpg" 
+           onmouseover="upDate(this)" 
+           onmouseout="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()"
+           tabindex="0">
+
+      <img class="preview" 
+           alt="Bacon Exploring in the Woods" 
+           src="images/bacon2.png" 
+           onmouseover="upDate(this)" 
+           onmouseout="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()"
+           tabindex="0">
+
+      <img class="preview" 
+           alt="Bacon Sitting Near the Branch Fort" 
+           src="images/bacon3.png" 
+           onmouseover="upDate(this)" 
+           onmouseout="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()"
+           tabindex="0">
+
+      <img class="preview" 
+           alt="Vibrant Purple and White Blooming Trees" 
+           src="images/bacon4.png" 
+           onmouseover="upDate(this)" 
+           onmouseout="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()"
+           tabindex="0">
+
+      <img class="preview" 
+           alt="Springtime Tree with White Blooms" 
+           src="images/bacon5.png" 
+           onmouseover="upDate(this)" 
+           onmouseout="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()"
+           tabindex="0">
+
+      <img class="preview" 
+           alt="Delicate Pink Blossoms in the Garden" 
+           src="images/bacon6.png" 
+           onmouseover="upDate(this)" 
+           onmouseout="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()"
+           tabindex="0">
+    </div>
+  </main>
+
+  <footer>
+    <p>Created for the Coursera course: <em>Interactivity with JavaScript</em> (University of Michigan).</p>
+    <p><a href="../index.html">&larr; Back to Assignments Portal</a></p>
+  </footer>
+</body>
+</html>
