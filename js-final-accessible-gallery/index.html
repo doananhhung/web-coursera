@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Interactive Photo Gallery | Final Project</title>
+  <link rel="stylesheet" href="css/gallery.css">
+  <script src="js/gallery.js"></script>
+</head>
+<body onload="addTabFocus()">
+
+  <header>
+    <h1>Accessible Interactive Photo Gallery</h1>
+    <h2>Scenic Highlights of Vietnam</h2>
+    <p class="instructions">
+      Interact using either your <strong>mouse</strong> (hover in/out) or <strong>keyboard</strong> (press <kbd>Tab</kbd> to focus and <kbd>Shift + Tab</kbd> to move backward). The selected image and description will appear in the main viewer below.
+    </p>
+  </header>
+
+  <main>
+    <!-- Main Display Element with id="image" -->
+    <div id="image">
+      Hover over or tab into an image below to display here.
+    </div>
+
+    <!-- Six Thumbnails Container with mouse and keyboard event listeners -->
+    <div class="gallery-container">
+      <img class="preview" 
+           src="images/halong.jpg" 
+           alt="Emerald waters and limestone islands of Ha Long Bay" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+
+      <img class="preview" 
+           src="images/sapa.jpg" 
+           alt="Lush green stepped rice terraces on mountain slopes of Sapa" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+
+      <img class="preview" 
+           src="images/ninhbinh.jpg" 
+           alt="Serene river winding through towering karst peaks in Trang An Ninh Binh" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+
+      <img class="preview" 
+           src="images/danang.jpg" 
+           alt="Famous Golden Bridge held by stone hands in Ba Na Hills Da Nang" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+
+      <img class="preview" 
+           src="images/hoian.jpg" 
+           alt="Historic yellow shophouses decorated with glowing lanterns in Hoi An Ancient Town" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+
+      <img class="preview" 
+           src="images/phuquoc.jpg" 
+           alt="Tropical palm trees and crystal turquoise waters of Phu Quoc Island" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Accessible Photo Gallery. Final Project for <em>Interactivity with JavaScript</em> (University of Michigan).</p>
+    <p><a href="../index.html">&larr; Back to Assignments Portal</a></p>
+  </footer>
+
+</body>
+</html>
