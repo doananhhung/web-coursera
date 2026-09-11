@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coursera Web Design & JavaScript Portfolio</title>
+  <title>Coursera Web Development Specialization Portfolio</title>
   <style>
     :root {
       --primary: #2563eb;
@@ -90,6 +90,10 @@
       background-color: #fef3c7;
       color: #b45309;
     }
+    .badge-rd {
+      background-color: #f3e8ff;
+      color: #7e22ce;
+    }
     .badge-final {
       background-color: #dcfce7;
       color: #15803d;
@@ -108,11 +112,11 @@
     .btn:hover {
       background-color: var(--primary-hover);
     }
-    .btn-featured {
-      background-color: #15803d;
+    .btn-purple {
+      background-color: #7e22ce;
     }
-    .btn-featured:hover {
-      background-color: #166534;
+    .btn-purple:hover {
+      background-color: #6b21a8;
     }
   </style>
 </head>
@@ -120,10 +124,20 @@
   <div class="container">
     <header>
       <h1>Coursera Coursework Portfolio</h1>
-      <p class="subtitle">Web Design for Everybody: HTML5, CSS3 & JavaScript Specialization</p>
+      <p class="subtitle">Web Design for Everybody: HTML5, CSS3, JavaScript & Responsive Design</p>
     </header>
 
     <main class="assignments-list">
+      <!-- Responsive Design HW Week 2 -->
+      <div class="card">
+        <div>
+          <span class="badge badge-rd">Responsive Design • Week 2</span>
+          <h2>Responsive Design with Media Queries</h2>
+          <p>Three distinct viewport layouts (mobile 1-column, tablet 772px 2-columns at 45% width, and desktop 998px 3-columns at 30% width) with max-height image constraints.</p>
+        </div>
+        <a href="responsive-homework-week2/index.html" class="btn btn-purple">View Responsive HW &rarr;</a>
+      </div>
+
       <!-- CSS HW 1 -->
       <div class="card">
         <div>
@@ -171,7 +185,7 @@
           <h2>Accessible Interactive Photo Gallery</h2>
           <p>Full accessibility: body onload tabfocus initialization via for-loop, mouseover, mouseleave, onfocus, onblur, and WCAG/aXe compliance.</p>
         </div>
-        <a href="js-final-accessible-gallery/index.html" class="btn btn-featured">View Final Project &rarr;</a>
+        <a href="js-final-accessible-gallery/index.html" class="btn">View Final Project &rarr;</a>
       </div>
     </main>
   </div>

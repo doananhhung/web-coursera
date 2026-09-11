@@ -1,0 +1,86 @@
+﻿/* ==========================================================================
+   CSS Stylesheet for Advanced Styling with Responsive Design
+   Assignment: Responsive Homework (Week 2) - Colors
+   ========================================================================== */
+
+body {
+  background-color: #dedede;
+  margin: 0;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: 25px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+div img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+/* ==========================================================================
+   Mobile View (Default: 1 Horizontal Div per row)
+   ========================================================================== */
+div {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  padding: 2px;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Query #1: Tablet View (triggers at 772px)
+   - Layout: 2 Horizontal Divs (divs are 45% of viewport width)
+   - Images: no more than 30% of viewport height (max-height: 30vh)
+   ========================================================================== */
+@media screen and (min-width: 772px) {
+  div {
+    display: inline-block;
+    width: 45%;
+    margin: 10px 2%;
+    vertical-align: top;
+  }
+
+  img, div img {
+    max-height: 30vh;
+    width: auto;
+  }
+}
+
+/* ==========================================================================
+   Query #2: Large Screen View (triggers at 998px)
+   - Layout: 3 Horizontal Divs (divs are 30% of viewport width)
+   - No other changes needed
+   ========================================================================== */
+@media screen and (min-width: 998px) {
+  div {
+    width: 30%;
+    margin: 10px 1.5%;
+  }
+}
+
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+}
