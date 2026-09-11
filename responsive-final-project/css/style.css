@@ -1,0 +1,164 @@
+﻿/* ==========================================================================
+   CSS Stylesheet for Advanced Styling with Responsive Design
+   Final Project: Responsive Website with User Preferences
+   ========================================================================== */
+
+/* 1. Global & Smooth Scroll Baseline */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #dedede;
+  color: #1e293b;
+  margin: 0;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 34px;
+  color: #0f172a;
+  margin: 15px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #334155;
+  text-align: left;
+  margin: 15px auto;
+}
+
+a {
+  color: #0284c7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Mobile View (Mobile-First: No media queries for mobile)
+   - One column grid with a 10px gap between rows and columns
+   ========================================================================== */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 25px auto;
+}
+
+figure {
+  margin: 0;
+  padding: 15px;
+  border: 4px solid #94a3b8;
+  background-color: #ffffff;
+  color: #0f172a;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+figure img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+figcaption {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+/* ==========================================================================
+   Media Query #1: Tablet View (triggers at 772px)
+   - Two column grid (inherits display: grid and gap: 10px without repeating)
+   - Circular shape on figures (border-radius: 50%)
+   - Last figure takes up both columns
+   ========================================================================== */
+@media screen and (min-width: 772px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  figure {
+    border-radius: 50%;
+  }
+
+  figure:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ==========================================================================
+   Media Query #2: Large Screen View (triggers at 992px)
+   - Every third figure takes up both columns
+   - Remove border radius from all figures (border-radius: 0)
+   - Note: No max-width used
+   ========================================================================== */
+@media screen and (min-width: 992px) {
+  figure {
+    border-radius: 0;
+  }
+
+  figure:nth-child(3n) {
+    grid-column: span 2;
+  }
+}
+
+/* ==========================================================================
+   Media Query #3: User Preference - Prefers Reduced Motion
+   - Remove scroll behavior
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ==========================================================================
+   Media Query #4: User Preference - Prefers Dark Color Scheme
+   - Dark background color on figures
+   - Lighter, yellow-ish font color on figures
+   - Black border color on figures
+   ========================================================================== */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f172a;
+    color: #f1f5f9;
+  }
+
+  h1 {
+    color: #f8fafc;
+  }
+
+  p {
+    color: #e2e8f0;
+  }
+
+  a {
+    color: #38bdf8;
+  }
+
+  figure {
+    background-color: #1e293b;
+    color: #fef08a;
+    border-color: #000000;
+  }
+
+  figcaption {
+    color: #fef08a;
+  }
+}
